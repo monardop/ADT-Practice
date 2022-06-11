@@ -7,10 +7,12 @@ typedef struct Node
     size_t dataSize;
     struct Node* next;
 }tNode;
-typedef enum bool {True, False};
+enum bool {True, False};
+typedef enum bool bool;
 
-void memcpy(void*, const void*, const size_t);
+void memcpy(void*, const void*, unsigned int);
 int lenght(const void*);
+int checkSpace(const size_t);
 
 
 
